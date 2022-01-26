@@ -1,2 +1,0 @@
-# acornle
- my solver
