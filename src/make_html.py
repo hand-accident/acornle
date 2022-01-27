@@ -119,6 +119,12 @@ class AcornHTML(HTMLGenerator):
 
         self.recursive_gen('', '', self.data)
 
+        repository_url = 'https://github.com/hand-accident/acornle'
+
+        with self.tag('a', href=repository_url,
+                      target='_blank', rel='noopener noreferrer'):
+            self.text('repository')
+            
     def gen_div(self, parent_id, r, d):
         key = get_key(d)
 
